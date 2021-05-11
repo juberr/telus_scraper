@@ -32,8 +32,8 @@ def get_telus_pharm_avail(pharma_id):
     for key in slots_data.keys():
         resp[key] = {}
 
-        resp[key]['numberAvailable'] = len(slots_data[key]) + 1
-        resp[key]['numberTotal'] = len(slots_data[key]) + 1
+        resp[key]['numberAvailable'] = len(slots_data[key]) 
+        resp[key]['numberTotal'] = len(slots_data[key]) 
         resp[key]['date'] = key
         resp[key]['vaccine'] = 0
         resp[key]['inputType'] = 1
